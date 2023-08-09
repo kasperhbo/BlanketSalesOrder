@@ -68,11 +68,11 @@ tableextension 50350 "Sales Header" extends "Sales Header"
         PriceListHeader: Record "Price List Header";
         PriceListLines: Record "Price List Line";
     begin
-        if (Rec."Rayon No." <> '') then begin
-            UpdatePriceByRecord(PriceListHeader, PriceListLines, SalesLine, SalesHeader, Rec."Rayon No.");
+        if (Rec.Project <> '') then begin
+            UpdatePriceByRecord(PriceListHeader, PriceListLines, SalesLine, SalesHeader, Rec.Project);
         end else
-            if (Rec.Project <> '') then begin
-                UpdatePriceByRecord(PriceListHeader, PriceListLines, SalesLine, SalesHeader, Rec.Project);
+            if (Rec."Rayon No." <> '') then begin
+                UpdatePriceByRecord(PriceListHeader, PriceListLines, SalesLine, SalesHeader, Rec."Rayon No.");
             end;
     end;
 
