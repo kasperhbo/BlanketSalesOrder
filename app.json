@@ -1,0 +1,45 @@
+{
+  "id": "5147dbc1-76c6-4a92-9062-d109d922f5b5",
+  "name": "BlanketSalesOrder",
+  "publisher": "Kasper de Bruin",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "fc2b0ea0-a932-47fa-aef2-6235673ee701",
+      "name": "Rayon",
+      "publisher": "Kasper de Bruin",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "df747a69-3d78-4e9d-9074-338fa36ee4ff",
+      "name": "CustomerProject",
+      "publisher": "Kasper de Bruin",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50350,
+      "to": 50399
+    }	
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
