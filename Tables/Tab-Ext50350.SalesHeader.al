@@ -19,7 +19,6 @@ tableextension 50350 "Sales Header" extends "Sales Header"
                     //Do some error/reseting handling here in the future
                 end
                 else begin
-                    Message('Rayon is set for this custome With no: ' + Rec."Rayon No.");
                     UpdateSalesLines();
                 end;
             end;
@@ -99,7 +98,6 @@ tableextension 50350 "Sales Header" extends "Sales Header"
 
     procedure RayonLookUpOK(var Rayon: Code[20]): Boolean
     var
-        // rayonRec: Record Rayon;
         rayonLookUpPage: Page RayonLookup;
         rec: Record Rayon;
     begin
@@ -128,5 +126,12 @@ tableextension 50350 "Sales Header" extends "Sales Header"
             exit(true);
         end else
             exit(false);
+    end;
+
+    trigger OnBeforeInsert()
+    var
+        SalesLineRec: Record "Sales Line";
+    begin
+
     end;
 }
